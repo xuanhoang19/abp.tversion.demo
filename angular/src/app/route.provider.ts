@@ -15,6 +15,12 @@ function configureRoutes(routesService: RoutesService) {
         order: 1,
         layout: eLayoutType.application,
       },
+      {
+        path: '/changelogs',
+        name: '::Menu:Books',
+        parentName: '::Menu:BookStore',
+        layout: eLayoutType.application,
+      },
     ]);
   };
 }

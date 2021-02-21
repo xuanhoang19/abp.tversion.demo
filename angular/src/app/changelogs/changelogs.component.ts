@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PackageService } from '../shared/services/backage.service';
 
 @Component({
   selector: 'app-changelogs',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChangelogsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private packageService: PackageService) { }
 
   ngOnInit(): void {
+    this.packageService.getList().subscribe((res: any) => {
+      console.log(res);
+    })
   }
 
 }
