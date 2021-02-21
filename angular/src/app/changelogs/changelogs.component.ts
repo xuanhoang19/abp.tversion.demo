@@ -13,6 +13,7 @@ export class ChangelogsComponent implements OnInit {
   ngOnInit(): void {
     this.packageService.getList().subscribe((res: any) => {
       console.log(res);
+
     })
   }
 

@@ -13,6 +13,7 @@ export class PackageService {
     this.restService.request<any, PagedResultDto<any>>({
       method: 'GET',
       url: `/api/Package/getall`,
+
     },
     { apiName: this.apiName });
 
